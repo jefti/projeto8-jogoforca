@@ -9,7 +9,7 @@ export default function Letra(props){
 
 
    return (
-    <button className='botaoLetra' disabled={teste} onClick={() => jogada(i)}>  
+    <button className='botaoLetra' disabled={teste} onClick={() => jogada(i)} data-test="letter">  
         {i.toUpperCase()} 
     </button>
     );

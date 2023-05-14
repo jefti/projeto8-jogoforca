@@ -7,13 +7,13 @@ export default function Jogo(props){
     const OutGame = [...PalavraSorteada].map((i,numero)=> <div key={'outGame'+numero} className={'DisplayLetra '+ Resultado} >{(numero==0)?i.toUpperCase():i}</div>);
 return(
     <div className='Jogo'>
-        <img src={'/assets/forca'+Jogadas+'.png'}></img>
+        <img src={'/assets/forca'+Jogadas+'.png'} data-test="game-image"></img>
 
         <div className='HUB'>
             <div>
-                <button className='botao' onClick={IniciarPartida}>Escolher Palavra</button>
+                <button className='botao' onClick={IniciarPartida} data-test="choose-word">Escolher Palavra</button>
             </div>
-            <div className='DisplayContainer'>
+            <div className='DisplayContainer' data-test="word">
                 {emPartida
                 ?lista
                 :OutGame }

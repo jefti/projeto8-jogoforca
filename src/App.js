@@ -65,25 +65,25 @@ const AdicionarLetra = (letra) => {
     let cont = LetrasCertas + 1;
     setLetrasCertas(cont);
     if(cont < LetrasNecessarias){
-      alert('acertou '+ cont+' letras até agora, faltam ' + LetrasNecessarias + ' Letras.');
+      //alert('acertou '+ cont+' letras até agora, faltam ' + LetrasNecessarias + ' Letras.');
     } else {
-      alert('Parabéns, você ganhou o jogo');
+      //alert('Parabéns, você ganhou o jogo');
       setEmPartida(false);
       setResultado('Vitoria');
     }
   } else {
     const novoValor = Jogadas +1;
-    alert('jogada : ' + novoValor);
+    //alert('jogada : ' + novoValor);
     setJogadas(novoValor);
     if(novoValor == 6){
-      alert('foram 6 jogadas erradas, você perdeu o jogo!');
+      //alert('foram 6 jogadas erradas, você perdeu o jogo!');
       setEmPartida(false);
       setResultado('Derrota');
     }
   } 
 }
 
-console.log(LetrasJogadas);
+
   
 
   return (
