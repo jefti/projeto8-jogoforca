@@ -11,3 +11,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Jogo{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px;
+}
+
+.Jogo img{
+  width: 400px;
+}
+
+.HUB {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.Letras{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao {
+  width: 200px;
+  height: 60px;
+  background-color: #27AE60;  
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Roboto';
+  border: none;
+
+}
+
+.botao:hover{
+  cursor: pointer;
+  border: 2px solid #aaa;
+}
+
+.container{width: 720px;}
+
+.botaoLetra{
+  flex-shrink: 0;
+  height: 40px;
+  width: 40px;
+  margin: 6px;
+  border: 1px solid #7AA7C7;
+  border-radius: 3px;
+  background-color: #E1ECF4;
+  font-family: 'Roboto';
+  color: #7AA7C7;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.botaoLetra:disabled{
+  background-color: #9FAAB5;
+  color: #798A9F;
+}
+
+.DisplayContainer{
+  display: flex;
+}
+.DisplayLetra{
+  margin:2px;
+
+  font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 68px;
+}
